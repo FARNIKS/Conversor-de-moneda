@@ -37,7 +37,7 @@ Tambien colocar otro conversor como: Temperatura, velocidad, etc. Uno o los que 
 
 
 ## Moneda
-
-	<source src="Videos/Moneda" type="video/mp4">
-
-
+<div style="text-align: center;">
+	<video width="640" height="360" controls>
+	<source src="Videos/Moneda.mp4" type="video/mp4">
+</div>

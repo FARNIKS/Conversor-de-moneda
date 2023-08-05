@@ -29,9 +29,4 @@ Tambien colocar otro conversor como: Temperatura, velocidad, etc. Uno o los que 
 
 # Interfaz-Conversor
 
-Este conversor integra la moneda a¿
 
-
-<div style="text-align: center;">
-    <img src="Videos/interfaz.png" alt="Interfaz">
-</div>

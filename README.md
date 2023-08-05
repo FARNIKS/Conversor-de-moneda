@@ -33,7 +33,7 @@ Tambien colocar otro conversor como: Temperatura, velocidad, etc. Uno o los que 
 
 
 <div style="text-align: center;">
-    <img src="Videos/interfaz" alt="interfaz">
+    <img src="Videos/interfaz.png" alt="interfaz">
 
 
 
@@ -41,4 +41,4 @@ Tambien colocar otro conversor como: Temperatura, velocidad, etc. Uno o los que 
 <video width="640" height="360" controls>
     <source src="Videos/Moneda.mp4" type="video/mp4">
 
-Aqui inte
+Aqui inteiuhuih

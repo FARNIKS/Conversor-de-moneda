@@ -29,26 +29,9 @@ Tambien colocar otro conversor como: Temperatura, velocidad, etc. Uno o los que 
 
 # Interfaz-Conversor
 
+Este conversor integra la moneda a¿
+
 
 <div style="text-align: center;">
-    <img src="Videos/interfaz.png" alt="interfaz">
-	</div>
-
-## Moneda
-
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Video en HTML</title>
-</head>
-<body>
-    <h1>Video de ejemplo</h1>
-    <video width="640" height="360" controls>
-        <source src="Videos/Moneda.mp4" type="video/mp4">
-        <!-- Aquí puedes agregar más etiquetas <source> para diferentes formatos de video -->
-        Tu navegador no soporta el elemento de video.
-    </video>
-</body>
-</html>
-
-Aqui inteiuhuih
+    <img src="Videos/interfaz.png" alt="Interfaz">
+</div>

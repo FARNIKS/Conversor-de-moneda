@@ -52,7 +52,7 @@ public class Tiempo  implements Conversor{
 	            	resultado=  cantidad /24;
 	            }
 	        }else if (datoBase.equals("Dia")||datoBase.equals("Day")) {
-	            if (datoAConvertir.equals("Milisegundo")||datoAConvertir.equals("Second")) {
+	            if (datoAConvertir.equals("Milisegundo")||datoAConvertir.equals("Milisecond")) {
 	            	resultado=  cantidad * 8.64e+7;
 	            } else if (datoAConvertir.equals("Segundo")||datoAConvertir.equals("Second")) {
 	            	resultado=  cantidad * 86400;

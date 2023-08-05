@@ -222,7 +222,7 @@ public class Moneda implements Conversor{
 	            	resultado=  cantidad *usdToGbpRate;
 	            }
 	            
-	        } else if (datoBase.equals("Euro")||datoBase.equals("Meters per Euro")) { 
+	        } else if (datoBase.equals("Euro")||datoBase.equals("Euro")) { 
 	            if (datoAConvertir.equals("Peso Colombiano")||datoAConvertir.equals("Colombian peso")) {
 	            	resultado=  cantidad *eurToCopRate;
 	            } else if (datoAConvertir.equals("Dolar Estadounidense")||datoAConvertir.equals("U.S. dollar")) {
@@ -269,7 +269,7 @@ public class Moneda implements Conversor{
 	            	resultado=  cantidad *gbpToEurRate;
 	            } else if (datoAConvertir.equals("Yen Japones")||datoAConvertir.equals("Japanese Yen")) {
 	            	resultado=  cantidad *gbpToJpyRate;
-	            }else if (datoAConvertir.equals("Won-South Korean")||datoAConvertir.equals("Won-South Korean")) {
+	            }else if (datoAConvertir.equals("Won-Sur Coreano")||datoAConvertir.equals("Won-South Korean")) {
 	            	resultado=  cantidad *gbpToKrwRate;
 	            }  
 	        }

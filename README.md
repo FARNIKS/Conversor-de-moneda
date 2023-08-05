@@ -31,13 +31,13 @@ Tambien colocar otro conversor como: Temperatura, velocidad, etc. Uno o los que 
 
 
 <div style="text-align: center;">
-    <img src="Videos/interfaz" alt="interfaz">
+    <img src="Videos/interfaz.png" alt="interfaz">
 	</div>
 
 ## Moneda
 
 <video width="640" height="360" controls>
-    <source src="ruta_del_video.mp4" type="video/mp4">
+    <source src="Videos/Moneda.mp4" type="video/mp4">
 	</video>
 
 Aqui inteiuhuih

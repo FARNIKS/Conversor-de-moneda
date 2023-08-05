@@ -1,5 +1,5 @@
 # CONVERSOR ALURA
-##Descripción de proyecto
+## Descripción de proyecto
 Es un reto de programacion de ONE (Oracle Next Education), en una interfaz grafica debemos hacer una conversion de divisas con los datos ingresados por el usuario.
 
 Requisitos:

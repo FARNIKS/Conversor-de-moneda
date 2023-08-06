@@ -56,7 +56,7 @@ Pero al seleccionar directamente la moneda no vuelve a tardar cuando cambia de d
 
 ### Exchange Rate API
 [**Exchange Rate API**](https://www.exchangerate-api.com)
-Esta API de cambio de divisas tiene un plan gratuito de 1500 solicitudes al servidor, es el que se implementó en este proyecto, con las dependencias json para usar los datos de esta API para mostrar el cambio de divisas del día a día. Aquí se muestra las solicitudes de cada divisa para el conversor con el uso de la key de la API para acceder a los datos.
+Esta API de cambio de divisas tiene un plan gratuito de 1500 solicitudes al servidor, es el que se implementó en este proyecto, con las dependencias json para usar los datos de esta API para mostrar el cambio de divisas del día a día. Aquí se muestra las solicitudes de cada divisa para el conversor con el uso de la KEY de la API para acceder a los datos.
 
 	 URL urlUSD = new URL("https://v6.exchangerate-api.com/v6/"+key+"/latest/USD");
 	 URL urlCOP = new URL("https://v6.exchangerate-api.com/v6/"+key+"/latest/COP");

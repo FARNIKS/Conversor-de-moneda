@@ -1,7 +1,8 @@
 # CONVERSOR ALURA
 <p align="left">
-   <img src="https://img.shields.io/badge/ESTADO-FINALIZADO-brightgreen">
    <img src="https://img.shields.io/badge/VERSI%C3%93N-V5.0-rgb(15%2C128%2C193)">
+   <img src="https://img.shields.io/badge/ESTADO-FINALIZADO-brightgreen">
+   
 </p>
 
 ## Descripción de proyecto
@@ -102,7 +103,11 @@ Se calcula las diferentes formas de medición como: Centímetro, Milímetro, Met
 - [jgoodies-common-1.8.0.jar](https://mvnrepository.com/artifact/com.jgoodies/jgoodies-common/1.8.0)
 - [jgoodies-forms-1.8.0.jar](https://mvnrepository.com/artifact/com.jgoodies/jgoodies-forms/1.8.0)
 
-# Instalación
+# Prerequisitos
+- Java Development Kit (JDK) 8 or later.
+- Conexión a internet para el cambio de divisas.
+- 
+# Utilizar codigo 
 - Descargar el código en archivo ZIP.
 - Exportarlo al IDE de preferencia.
 

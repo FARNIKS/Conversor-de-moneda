@@ -108,9 +108,10 @@ Se calcula las diferentes formas de medición como: Centímetro, Milímetro, Met
 - Conexión a internet para el cambio de divisas.
   
 # Instalación 1
-- Descargar el código en archivo ZIP.
-- Exportarlo al IDE de preferencia.
-
+1. Descargar el código en archivo ZIP.
+2. Exportarlo al IDE de preferencia.
+3. Ejecutar Programa
+   
 ## Instalación 2
 
 1. Clonar el repositorio

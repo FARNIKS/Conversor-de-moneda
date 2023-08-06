@@ -29,20 +29,22 @@ También colocar otro conversor como: Temperatura, velocidad, etc. Uno o los que
 El diseño del programa implementa un estilo pixel art amigable y llamativo a la vista del usuario, implementando distintas funciones, como:
 - No permite seleccionar los mismos valores en las listas.
 - Se actualizan los valores al ingresar los datos por teclado y al seleccionar los elementos de la lista.
-- Implementación de modo claro y oscuro.
-  
+
+## Temas
+Se cambia el diseño del conversor en modo claro y oscuro.
+
 [ruta-del-video.mp4](https://github.com/FARNIKS/Conversor-Alura/assets/128429185/1c2437a1-2bea-46d3-8a37-29fcd01c6ce7)
- 
-- Implementación de cambio de idioma de ingles a español y viceversa.
-  
+
+##Idiomas
+Se cambia el idioma a Ingles y Español 
+
+
 [ruta-del-video.mp4]( https://github.com/FARNIKS/Conversor-Alura/assets/128429185/9980d423-0048-4d28-82c8-9467b24d50d5)
-  
-- Ventana acerca de.
-  
+
+## Acerca de
+Da una explicacion breve de lo que hace cada tipo de conversor y unos hipervivulos a las redes sociales de GitHub Y LinkedIn 
+
 [ruta-del-video.mp4](https://github.com/FARNIKS/Conversor-Alura/assets/128429185/4683d42e-717c-4585-921f-44d63efecbe2)
-
-
-
 
 # Conversores
 
@@ -94,4 +96,8 @@ Se calcula las diferentes formas de medición como:Centímetro, Milímetro, Metr
 ### Dependencias del conversor
 [jgoodies-common-1.8.0.jar](https://mvnrepository.com/artifact/com.jgoodies/jgoodies-common/1.8.0)
 [jgoodies-forms-1.8.0.jar](https://mvnrepository.com/artifact/com.jgoodies/jgoodies-forms/1.8.0)
+
+# Instalacion
+
+
 

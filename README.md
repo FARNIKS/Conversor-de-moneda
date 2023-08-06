@@ -31,6 +31,9 @@ El diseño del programa implementa un estilo pixel art amigable y llamativo a la
 - Se actualizan los valores al ingresar los datos por teclado y al seleccionar los elementos de la lista.
 - Implementacion de modo claro y oscuro.
 - Implementacion de cambio de idioma.
+- Ventana acerca de.
+
+
 
 # Conversores
 
@@ -58,17 +61,25 @@ Hay más código donde se tiene q conectar con la api obtener los datos y las op
 
 
 ## Temperatura
-Aquí el conversor es en grados de temperatura, Fahrenheit, Celsius y Kelvin, con sus fórmulas y operaciones correspondientes.
+En este conversor es en grados de temperatura, Fahrenheit, Celsius y Kelvin, con sus fórmulas y operaciones correspondientes.
 
 [ruta-del-video.mp4](https://github.com/FARNIKS/Conversor-Alura/assets/128429185/d8101540-cc93-417b-b2a6-8653003fac11)
 
 ## Velocidad
-En este conversor se realizan las operaciones de:
-- Pie por segundo.
-- Milla por hora.
-- Metros por segundo.
-- Kilómetros por hora.
-- Nudos.
+En este conversor se calculan las velocidades de Pie por segundo, Metros por Segundo, Milla por hora, Kilómetros por hora y Nudos.
+
   
 [ruta-del-video.mp4](https://github.com/FARNIKS/Conversor-Alura/assets/128429185/1188ec29-288a-4acd-8b01-6b87c543d200)
+
+## Tiempo
+
+En este Calcula las distintas cantidades de tiempo, pero implentando las mas generales como: Milisegundo, Minuto, Segundo, Hora y Dia.
+
+[ruta-del-video.mp4](https://github.com/FARNIKS/Conversor-Alura/assets/128429185/119a226b-c830-4001-8098-be55a2e8864a)
+
+## Longitud
+Se calcula las diferentes formas de medición como:Centímetro, Milímetro, Metro y Kilometro.
+
+[ruta-del-video.mp4](https://github.com/FARNIKS/Conversor-Alura/assets/128429185/c8777659-5524-4ac8-8175-c0c744db9aff)
+
 

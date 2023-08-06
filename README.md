@@ -1,4 +1,8 @@
 # CONVERSOR ALURA
+<p align="left">
+   <img src="https://img.shields.io/badge/ESTADO-FINALIZADO-brightgreen">
+   <img src="https://img.shields.io/badge/VERSI%C3%93N-V1.0-rgb(15%2C128%2C193)">
+</p>
 
 ## Descripción de proyecto
 Es un reto de programación de ONE (Oracle Next Education), en una interfaz gráfica debemos hacer una conversión de divisas con los datos ingresados por el usuario.

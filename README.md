@@ -106,11 +106,22 @@ Se calcula las diferentes formas de medición como: Centímetro, Milímetro, Met
 # Prerequisitos
 - Java Development Kit (JDK) 8 or later.
 - Conexión a internet para el cambio de divisas.
-- 
-# Utilizar codigo 
+  
+# Instalación 1
 - Descargar el código en archivo ZIP.
 - Exportarlo al IDE de preferencia.
 
+## Instalación 2
 
+1. Clonar el repositorio
+   ```sh
+   git clone https://github.com/FARNIKS/Conversor-Alura.git
+
+2. Exportar el proyecto en el IDE de preferencia
+3. Ejecutar el programa
+
+<a href="https://www.linkedin.com/in/miguel-jimenez-b34899264/">
+	<img src="https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white">
+</a>
 
 

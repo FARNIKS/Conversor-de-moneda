@@ -30,5 +30,5 @@ Tambien colocar otro conversor como: Temperatura, velocidad, etc. Uno o los que 
 # Interfaz-Conversor
 # Moneda
 <p align="center">
-[Ver video]([ruta-del-video.mp4](https://github.com/FARNIKS/Conversor-Alura/assets/128429185/1653aaae-b950-4a7e-84ae-a2c501e21c27))
+[Ver video]([https://github.com/FARNIKS/Conversor-Alura/assets/128429185/1653aaae-b950-4a7e-84ae-a2c501e21c27])
 </p>

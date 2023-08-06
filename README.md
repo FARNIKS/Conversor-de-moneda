@@ -32,13 +32,8 @@ El diseño del programa implementa un estilo pixel art amigable y llamativo a la
 
 ## Temas
 Se cambia el diseño del conversor en modo claro y oscuro.
-<details>
-  <summary>Ver video oculto</summary>
-  <video controls>
-    <source src="https://github.com/FARNIKS/Conversor-Alura/assets/128429185/1c2437a1-2bea-46d3-8a37-29fcd01c6ce7" type="video/mp4">
-    Tu navegador no admite la reproducción de videos.
-  </video>
-</details>
+
+![Texto alternativo](https://github.com/FARNIKS/Conversor-Alura/assets/128429185/1c2437a1-2bea-46d3-8a37-29fcd01c6ce7)
 
 
 ## Idiomas

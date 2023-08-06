@@ -28,6 +28,8 @@ También colocar otro conversor como: Temperatura, velocidad, etc. Uno o los que
 # Interfaz-Conversor
 
 
+
+
 ## Moneda
 Este es el conversor es el principal del reto de programación, lo realice implementando una **API Exchange** para que se actualice el valor de las divisas implementadas día a día, tarda entre 3 a 7 segundos al seleccionar la Moneda y a su vez cuando eligen los mismos valores en ambas listas, por hacer la conexión con la API y tener sus datos.
 Pero al seleccionar directamente la moneda no vuelve a tardar cuando cambia de divisas a no ser que elija otro tipo de conversor y regrese a seleccionar moneda volverá a tardar lo mismo.
@@ -45,7 +47,12 @@ Esta API de cambio de divisas tiene un plan gratuito de 1500 solicitudes al serv
 	 URL urlJPY = new URL("https://v6.exchangerate-api.com/v6/"+key+"/latest/JPY");
 	 URL urlKRW = new URL("https://v6.exchangerate-api.com/v6/"+key+"/latest/KRW");
 
+Hay más código donde se tiene q conectar con la api obtener los datos y las operaciones.
+
 #### Dependencias API
-- [jsoup](https://jsoup.org/download)
 - [json](https://mvnrepository.com/artifact/org.json/json)
 
+
+## Temperatura
+Aquí el conversor es en grados de temperatura, Fahrenheit, Celsius y Kelvin, con sus fórmulas y operaciones correspondientes.
+[ruta-del-video.mp4](https://github.com/FARNIKS/Conversor-Alura/assets/128429185/d8101540-cc93-417b-b2a6-8653003fac11)

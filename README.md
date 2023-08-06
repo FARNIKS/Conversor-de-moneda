@@ -29,7 +29,6 @@ Tambien colocar otro conversor como: Temperatura, velocidad, etc. Uno o los que 
 
 # Interfaz-Conversor
 # Moneda
-<video width="640" height="360" controls>
-  <source src="Videos/Moneda.mp4" type="video/mp4">
-</video>
-
+<p align="center">
+https://github.com/FARNIKS/Conversor-Alura/assets/128429185/1653aaae-b950-4a7e-84ae-a2c501e21c27
+</p>

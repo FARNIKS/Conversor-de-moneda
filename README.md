@@ -33,7 +33,7 @@ El diseño del programa implementa un estilo pixel art amigable y llamativo a la
 ## Temas
 Se cambia el diseño del conversor en modo claro y oscuro.
 
-![ruta-del-video.mp4](https://github.com/FARNIKS/Conversor-Alura/assets/128429185/1c2437a1-2bea-46d3-8a37-29fcd01c6ce7)
+[ruta-del-video.mp4](https://github.com/FARNIKS/Conversor-Alura/assets/128429185/1c2437a1-2bea-46d3-8a37-29fcd01c6ce7)
 
 ##Idiomas
 Se cambia el idioma a Ingles y Español 

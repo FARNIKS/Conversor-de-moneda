@@ -26,12 +26,21 @@ También colocar otro conversor como: Temperatura, velocidad, etc. Uno o los que
 
 
 # Interfaz-Conversor
-El diseño del programa implementa un estilo pixel art amigable y llamativo a la vista del usuario, imprementando distintas funciones, como:
+El diseño del programa implementa un estilo pixel art amigable y llamativo a la vista del usuario, implementando distintas funciones, como:
 - No permite seleccionar los mismos valores en las listas.
 - Se actualizan los valores al ingresar los datos por teclado y al seleccionar los elementos de la lista.
-- Implementacion de modo claro y oscuro.
-- Implementacion de cambio de idioma.
+- Implementación de modo claro y oscuro.
+  
+[ruta-del-video.mp4](https://github.com/FARNIKS/Conversor-Alura/assets/128429185/1c2437a1-2bea-46d3-8a37-29fcd01c6ce7)
+ 
+- Implementación de cambio de idioma de ingles a español y viceversa.
+  
+[ruta-del-video.mp4]( https://github.com/FARNIKS/Conversor-Alura/assets/128429185/9980d423-0048-4d28-82c8-9467b24d50d5)
+  
 - Ventana acerca de.
+  
+[ruta-del-video.mp4](https://github.com/FARNIKS/Conversor-Alura/assets/128429185/4683d42e-717c-4585-921f-44d63efecbe2)
+
 
 
 
@@ -43,7 +52,7 @@ Pero al seleccionar directamente la moneda no vuelve a tardar cuando cambia de d
 
 [ruta-del-video.mp4](https://github.com/FARNIKS/Conversor-Alura/assets/128429185/6ca9591a-0d27-4ad3-814e-8a71cbc8da81)
 
-
+### Exchange Rate API
 [**Exchange Rate API**](https://www.exchangerate-api.com)
 Esta API de cambio de divisas tiene un plan gratuito de 1500 solicitudes al servidor, es el que se implementó en este proyecto, con las dependencias json para usar los datos de esta API para mostrar el cambio de divisas del día a día. Aquí se muestra las solicitudes de cada divisa para el conversor con el uso de la key de la API para acceder a los datos.
 
@@ -68,7 +77,6 @@ En este conversor es en grados de temperatura, Fahrenheit, Celsius y Kelvin, con
 ## Velocidad
 En este conversor se calculan las velocidades de Pie por segundo, Metros por Segundo, Milla por hora, Kilómetros por hora y Nudos.
 
-  
 [ruta-del-video.mp4](https://github.com/FARNIKS/Conversor-Alura/assets/128429185/1188ec29-288a-4acd-8b01-6b87c543d200)
 
 ## Tiempo
@@ -82,4 +90,8 @@ Se calcula las diferentes formas de medición como:Centímetro, Milímetro, Metr
 
 [ruta-del-video.mp4](https://github.com/FARNIKS/Conversor-Alura/assets/128429185/c8777659-5524-4ac8-8175-c0c744db9aff)
 
+
+### Dependencias del conversor
+[jgoodies-common-1.8.0.jar](https://mvnrepository.com/artifact/com.jgoodies/jgoodies-common/1.8.0)
+[jgoodies-forms-1.8.0.jar](https://mvnrepository.com/artifact/com.jgoodies/jgoodies-forms/1.8.0)
 

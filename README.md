@@ -94,8 +94,8 @@ Se calcula las diferentes formas de medición como:Centímetro, Milímetro, Metr
 
 
 ### Dependencias del conversor
-[jgoodies-common-1.8.0.jar](https://mvnrepository.com/artifact/com.jgoodies/jgoodies-common/1.8.0)
-[jgoodies-forms-1.8.0.jar](https://mvnrepository.com/artifact/com.jgoodies/jgoodies-forms/1.8.0)
+- [jgoodies-common-1.8.0.jar](https://mvnrepository.com/artifact/com.jgoodies/jgoodies-common/1.8.0)
+- [jgoodies-forms-1.8.0.jar](https://mvnrepository.com/artifact/com.jgoodies/jgoodies-forms/1.8.0)
 
 # Instalacion
 - Descargar el codigo en archivo ZIP.

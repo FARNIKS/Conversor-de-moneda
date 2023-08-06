@@ -33,19 +33,19 @@ El diseño del programa implementa un estilo pixel art amigable y llamativo a la
 ## Temas
 Se cambia el diseño del conversor en modo claro y oscuro.
 
-[![Texto alternativo](https://github.com/FARNIKS/Conversor-Alura/assets/128429185/1c2437a1-2bea-46d3-8a37-29fcd01c6ce7)]
+[VideoTemas](https://github.com/FARNIKS/Conversor-Alura/assets/128429185/1c2437a1-2bea-46d3-8a37-29fcd01c6ce7)
 
 
 ## Idiomas
 Se cambia el idioma a Ingles y Español 
 
 
-[ruta-del-video.mp4]( https://github.com/FARNIKS/Conversor-Alura/assets/128429185/9980d423-0048-4d28-82c8-9467b24d50d5)
+[VideoIdiomas]( https://github.com/FARNIKS/Conversor-Alura/assets/128429185/9980d423-0048-4d28-82c8-9467b24d50d5)
 
 ## Acerca de
 Da una explicacion breve de lo que hace cada tipo de conversor y unos hipervivulos a las redes sociales de GitHub Y LinkedIn 
 
-[ruta-del-video.mp4](https://github.com/FARNIKS/Conversor-Alura/assets/128429185/4683d42e-717c-4585-921f-44d63efecbe2)
+[VideoAcercaDe](https://github.com/FARNIKS/Conversor-Alura/assets/128429185/4683d42e-717c-4585-921f-44d63efecbe2)
 
 # Conversores
 
@@ -53,7 +53,7 @@ Da una explicacion breve de lo que hace cada tipo de conversor y unos hipervivul
 Este es el conversor es el principal del reto de programación, se realizo implementando una **API Exchange** para que se actualice el valor de las divisas implementadas día a día, tarda entre 3 a 7 segundos al seleccionar la Moneda y a su vez cuando eligen los mismos valores en ambas listas, por hacer la conexión con la API y tener sus datos.
 Pero al seleccionar directamente la moneda no vuelve a tardar cuando cambia de divisas a no ser que elija otro tipo de conversor y regrese a seleccionar moneda volverá a tardar lo mismo.
 
-[ruta-del-video.mp4](https://github.com/FARNIKS/Conversor-Alura/assets/128429185/6ca9591a-0d27-4ad3-814e-8a71cbc8da81)
+[VideoMoneda](https://github.com/FARNIKS/Conversor-Alura/assets/128429185/6ca9591a-0d27-4ad3-814e-8a71cbc8da81)
 
 ### Exchange Rate API
 [**Exchange Rate API**](https://www.exchangerate-api.com)
@@ -75,23 +75,23 @@ Hay más código donde se tiene q conectar con la api obtener los datos y las op
 ## Temperatura
 En este conversor es en grados de temperatura, Fahrenheit, Celsius y Kelvin, con sus fórmulas y operaciones correspondientes.
 
-[ruta-del-video.mp4](https://github.com/FARNIKS/Conversor-Alura/assets/128429185/d8101540-cc93-417b-b2a6-8653003fac11)
+[VideoTemperatura](https://github.com/FARNIKS/Conversor-Alura/assets/128429185/d8101540-cc93-417b-b2a6-8653003fac11)
 
 ## Velocidad
 En este conversor se calculan las velocidades de Pie por segundo, Metros por Segundo, Milla por hora, Kilómetros por hora y Nudos.
 
-[ruta-del-video.mp4](https://github.com/FARNIKS/Conversor-Alura/assets/128429185/1188ec29-288a-4acd-8b01-6b87c543d200)
+[VideoVelocidad](https://github.com/FARNIKS/Conversor-Alura/assets/128429185/1188ec29-288a-4acd-8b01-6b87c543d200)
 
 ## Tiempo
 
 En este Calcula las distintas cantidades de tiempo, pero implentando las mas generales como: Milisegundo, Minuto, Segundo, Hora y Dia.
 
-[ruta-del-video.mp4](https://github.com/FARNIKS/Conversor-Alura/assets/128429185/119a226b-c830-4001-8098-be55a2e8864a)
+[VideoTiempo](https://github.com/FARNIKS/Conversor-Alura/assets/128429185/119a226b-c830-4001-8098-be55a2e8864a)
 
 ## Longitud
 Se calcula las diferentes formas de medición como:Centímetro, Milímetro, Metro y Kilometro.
 
-[ruta-del-video.mp4](https://github.com/FARNIKS/Conversor-Alura/assets/128429185/c8777659-5524-4ac8-8175-c0c744db9aff)
+[VideoLongitud](https://github.com/FARNIKS/Conversor-Alura/assets/128429185/c8777659-5524-4ac8-8175-c0c744db9aff)
 
 
 ### Dependencias del conversor

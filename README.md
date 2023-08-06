@@ -26,12 +26,16 @@ También colocar otro conversor como: Temperatura, velocidad, etc. Uno o los que
 
 
 # Interfaz-Conversor
+El diseño del programa implementa un estilo pixel art amigable y llamativo a la vista del usuario, imprementando distintas funciones, como:
+- No permite seleccionar los mismos valores en las listas.
+- Se actualizan los valores al ingresar los datos por teclado y al seleccionar los elementos de la lista.
+- Implementacion de modo claro y oscuro.
+- Implementacion de cambio de idioma.
 
-
-
+# Conversores
 
 ## Moneda
-Este es el conversor es el principal del reto de programación, lo realice implementando una **API Exchange** para que se actualice el valor de las divisas implementadas día a día, tarda entre 3 a 7 segundos al seleccionar la Moneda y a su vez cuando eligen los mismos valores en ambas listas, por hacer la conexión con la API y tener sus datos.
+Este es el conversor es el principal del reto de programación, se realizo implementando una **API Exchange** para que se actualice el valor de las divisas implementadas día a día, tarda entre 3 a 7 segundos al seleccionar la Moneda y a su vez cuando eligen los mismos valores en ambas listas, por hacer la conexión con la API y tener sus datos.
 Pero al seleccionar directamente la moneda no vuelve a tardar cuando cambia de divisas a no ser que elija otro tipo de conversor y regrese a seleccionar moneda volverá a tardar lo mismo.
 
 [ruta-del-video.mp4](https://github.com/FARNIKS/Conversor-Alura/assets/128429185/6ca9591a-0d27-4ad3-814e-8a71cbc8da81)
@@ -57,3 +61,14 @@ Hay más código donde se tiene q conectar con la api obtener los datos y las op
 Aquí el conversor es en grados de temperatura, Fahrenheit, Celsius y Kelvin, con sus fórmulas y operaciones correspondientes.
 
 [ruta-del-video.mp4](https://github.com/FARNIKS/Conversor-Alura/assets/128429185/d8101540-cc93-417b-b2a6-8653003fac11)
+
+## Velocidad
+En este conversor se realizan las operaciones de:
+- Pie por segundo.
+- Milla por hora.
+- Metros por segundo.
+- Kilómetros por hora.
+- Nudos.
+  
+[ruta-del-video.mp4](https://github.com/FARNIKS/Conversor-Alura/assets/128429185/1188ec29-288a-4acd-8b01-6b87c543d200)
+

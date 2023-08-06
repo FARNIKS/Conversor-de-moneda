@@ -37,20 +37,20 @@ Se cambia el diseño del conversor en modo claro y oscuro.
 
 
 ## Idiomas
-Se cambia el idioma a Ingles y Español 
+Se cambia el idioma a Inglés y Español 
 
 
 [VideoIdiomas]( https://github.com/FARNIKS/Conversor-Alura/assets/128429185/9980d423-0048-4d28-82c8-9467b24d50d5)
 
 ## Acerca de
-Da una explicacion breve de lo que hace cada tipo de conversor y unos hipervivulos a las redes sociales de GitHub Y LinkedIn 
+Da una explicación breve de lo que hace cada tipo de conversor y unos hipervínculos a las redes sociales de GitHub Y LinkedIn 
 
 [VideoAcercaDe](https://github.com/FARNIKS/Conversor-Alura/assets/128429185/4683d42e-717c-4585-921f-44d63efecbe2)
 
 # Conversores
 
 ## Moneda
-Este es el conversor es el principal del reto de programación, se realizo implementando una **API Exchange** para que se actualice el valor de las divisas implementadas día a día, tarda entre 3 a 7 segundos al seleccionar la Moneda y a su vez cuando eligen los mismos valores en ambas listas, por hacer la conexión con la API y tener sus datos.
+Este es el conversor es el principal del reto de programación, se realizó implementando una **API Exchange** para que se actualice el valor de las divisas implementadas día a día, tarda entre 3 a 7 segundos al seleccionar la Moneda y a su vez cuando eligen los mismos valores en ambas listas, por hacer la conexión con la API y tener sus datos.
 Pero al seleccionar directamente la moneda no vuelve a tardar cuando cambia de divisas a no ser que elija otro tipo de conversor y regrese a seleccionar moneda volverá a tardar lo mismo.
 
 [VideoMoneda](https://github.com/FARNIKS/Conversor-Alura/assets/128429185/6ca9591a-0d27-4ad3-814e-8a71cbc8da81)
@@ -66,7 +66,7 @@ Esta API de cambio de divisas tiene un plan gratuito de 1500 solicitudes al serv
 	 URL urlJPY = new URL("https://v6.exchangerate-api.com/v6/"+key+"/latest/JPY");
 	 URL urlKRW = new URL("https://v6.exchangerate-api.com/v6/"+key+"/latest/KRW");
 
-Hay más código donde se tiene q conectar con la api obtener los datos y las operaciones.
+Hay más código donde se tiene q conectar con la API obtener los datos y las operaciones.
 
 #### Dependencias API
 - [json](https://mvnrepository.com/artifact/org.json/json)
@@ -84,12 +84,12 @@ En este conversor se calculan las velocidades de Pie por segundo, Metros por Seg
 
 ## Tiempo
 
-En este Calcula las distintas cantidades de tiempo, pero implentando las mas generales como: Milisegundo, Minuto, Segundo, Hora y Dia.
+En este Calcula las distintas cantidades de tiempo, pero implantando las más generales como: Milisegundo, Minuto, Segundo, Hora y Dia.
 
 [VideoTiempo](https://github.com/FARNIKS/Conversor-Alura/assets/128429185/119a226b-c830-4001-8098-be55a2e8864a)
 
 ## Longitud
-Se calcula las diferentes formas de medición como:Centímetro, Milímetro, Metro y Kilometro.
+Se calcula las diferentes formas de medición como: Centímetro, Milímetro, Metro y Kilometro.
 
 [VideoLongitud](https://github.com/FARNIKS/Conversor-Alura/assets/128429185/c8777659-5524-4ac8-8175-c0c744db9aff)
 
@@ -98,8 +98,10 @@ Se calcula las diferentes formas de medición como:Centímetro, Milímetro, Metr
 - [jgoodies-common-1.8.0.jar](https://mvnrepository.com/artifact/com.jgoodies/jgoodies-common/1.8.0)
 - [jgoodies-forms-1.8.0.jar](https://mvnrepository.com/artifact/com.jgoodies/jgoodies-forms/1.8.0)
 
-# Instalacion
-- Descargar el codigo en archivo ZIP.
+# Instalación
+- Descargar el código en archivo ZIP.
 - Exportarlo al IDE de preferencia.
+
+
 
 

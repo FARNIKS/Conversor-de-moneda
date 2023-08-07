@@ -104,7 +104,7 @@ Se calcula las diferentes formas de medición como: Centímetro, Milímetro, Met
 - [jgoodies-forms-1.8.0.jar](https://mvnrepository.com/artifact/com.jgoodies/jgoodies-forms/1.8.0)
 
 # Requisitos
-- Java Development Kit (JDK) 1.8 o despues.
+- Java Development Kit (JDK) 1.8 o mas.
 - Conexión a internet para el cambio de divisas.
   
 # Instalación 1

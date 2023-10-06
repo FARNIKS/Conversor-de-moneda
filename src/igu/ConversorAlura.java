@@ -39,51 +39,48 @@ import Logica.Temperatura;
 import Logica.Tiempo;
 import Logica.Velocidad;
 
-
+//Es toda la interfaz grafica del programa y conecta con la parte logica para que se ejecute de manera correcta
 public class ConversorAlura extends JFrame implements ItemListener,ActionListener {
 
 	private JPanel contentPane,contenidoPanel,contentConversor;
+	private Conversor conversor;
 	private JLabel lblFondo;
-	private JComboBox<String> cboSelectorConversor;
-	private JComboBox<String> cboListaConversor1;
-	private JComboBox<String> cboListaConversor2;
-	private JTextField txtCuadroDato1= new JTextField(20);
-	private JLabel lblResultado;
-	private JTextField txtCuadroDato2= new JTextField(20);
 	private JLabel lblIndicacionesTipoConversor;
 	private JLabel lblLogoAlura;
 	private JLabel lblIndicacionesTipoDato1;
 	private JLabel lblIndicacionesTipoDato2;
-	private int conversorTipo;
+	private JLabel lblResultado;
+	private JLabel lblTipoConversor;
+	private JLabel lblTituloConversor;
+	private JTextField txtCuadroDato1= new JTextField(20);
+	private JTextField txtCuadroDato2= new JTextField(20);
+	private JTextField textResultado;
 	private String conversorTipoText;
 	private String datoBase,datoAConvertir,indexTexto; 
-	private JLabel lblTipoConversor;
-	private JTextField textResultado;
+	private int conversorTipo;
 	private int index,newIndex,aleatorio;
-	private Random random = new Random();
 	private double dato1,dato2;
-	private Conversor conversor;
 	private boolean isProcessingSelection = false;
+	private Random random = new Random();
+	private JComboBox<String> cboSelectorConversor;
+	private JComboBox<String> cboListaConversor1;
+	private JComboBox<String> cboListaConversor2;
 	private ImageIcon logo;
 	private ButtonGroup grupoTema;
 	private ButtonGroup grupoIdioma;
-	private JLabel lblTituloConversor;
 	private JMenu mnInicio;
-	private JMenuItem mntmConversorAlura;
 	private JMenu mnInterfaz;
 	private JMenu mnInformacion;
-	private JMenuItem mntmAcercaDe;
 	private JMenu mnTema;
 	private JMenu mnIdiomas;
+	private JMenuItem mntmAcercaDe;
+	private JMenuItem mntmConversorAlura;
 	private JRadioButtonMenuItem rdbtnmntmEspañol;
 	private JRadioButtonMenuItem rdbtnmntmIngles;
 	 
 	
 	public ConversorAlura() {
       initComponents();
-      
-       
-        
     }
 	
 	private void initComponents() {
@@ -92,6 +89,7 @@ public class ConversorAlura extends JFrame implements ItemListener,ActionListene
 		setBounds(100, 100, 642, 536);
 		setIconImage(new ImageIcon(getClass().getResource("/imgs/LogoConversor.png")).getImage());
 		setTitle("Conversor-Alura");
+		//Hay varios paneles para integrar el cambio de interfaz y temas.
 		contentPane = new JPanel();
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 		setContentPane(contentPane);
@@ -136,13 +134,9 @@ public class ConversorAlura extends JFrame implements ItemListener,ActionListene
 		lblTituloConversor.setForeground(new Color(255, 255, 255));
 		lblTituloConversor.setBounds(111, 34, 295, 37);
 		contenidoPanel.add(lblTituloConversor);
+
 		
 		cboListaConversor1 = new JComboBox<String>();
-		cboListaConversor1.addItemListener(new ItemListener() {
-			public void itemStateChanged(ItemEvent e) {
-				realizarOperacion();
-			}
-		});
 		cboListaConversor1.setForeground(new Color(0, 9, 36));
 		cboListaConversor1.setFont(new Font("Century Gothic", Font.BOLD, 14));
 		cboListaConversor1.setMaximumRowCount(4);
@@ -152,14 +146,16 @@ public class ConversorAlura extends JFrame implements ItemListener,ActionListene
 		cboListaConversor1.setBounds(97, 293, 208, 25);
 		cboListaConversor1.setUI(PropiedadesSecundariasOscura.createUI(rootPane));
 		cboListaConversor1.setRenderer(new ColorSelectedSecuOcura());
+		cboListaConversor1.addItemListener(new ItemListener() {/*Hace que cada vez que seleccione un elento de 
+			la lista realice la operación*/ 
+				public void itemStateChanged(ItemEvent e) {
+					realizarOperacion();
+				}
+			});
 		contenidoPanel.add(cboListaConversor1);
 		
+		
 		cboListaConversor2 = new JComboBox<String>();
-		cboListaConversor2.addItemListener(new ItemListener() {
-			public void itemStateChanged(ItemEvent e) {
-				realizarOperacion();
-			}
-		});
 		cboListaConversor2.setForeground(new Color(0, 9, 36));
 		cboListaConversor2.setFont(new Font("Century Gothic", Font.BOLD, 14));
 		cboListaConversor2.setMaximumRowCount(4);
@@ -169,32 +165,16 @@ public class ConversorAlura extends JFrame implements ItemListener,ActionListene
 		cboListaConversor2.setBounds(349, 293, 208, 25);
 		cboListaConversor2.setUI(PropiedadesSecundariasOscura.createUI(rootPane));
 		cboListaConversor2.setRenderer(new ColorSelectedSecuOcura());
+		cboListaConversor2.addItemListener(new ItemListener() {/*Hace que cada vez que seleccione un elento de 
+			la lista realice la operación*/ 
+				public void itemStateChanged(ItemEvent e) {
+					realizarOperacion();
+				}
+			});
 		contenidoPanel.add(cboListaConversor2);
 		
-		txtCuadroDato1 = new JTextField("0.0");
-		txtCuadroDato1.addKeyListener(new KeyAdapter() {
-			@Override
-			public void keyTyped(KeyEvent e) {
-				char c= e.getKeyChar();
-				if((c<'0'||c>'9')&&(c != KeyEvent.VK_BACK_SPACE)&&(c!='.'||txtCuadroDato1.getText().contains("."))) e.consume();
-			}
-		});
-		txtCuadroDato1.addMouseListener(new MouseAdapter() {
-			@Override
-			public void mousePressed(MouseEvent e) {
-				 if(txtCuadroDato1.getText().equals("0.0")) {
-				 txtCuadroDato1.setText("");
-				 }
-				 if(txtCuadroDato2.getText().isEmpty()) {
-					 txtCuadroDato2.setText("0.0");	 
-				 }
-			}
-			@Override
-			public void mouseClicked(MouseEvent e) {
-				realizarOperacion(); 
-			}
-		});
 		
+		txtCuadroDato1 = new JTextField("0.0");
 		dato1=Double.parseDouble(txtCuadroDato1.getText());
 		txtCuadroDato1.setFont(new Font("Century Gothic", Font.BOLD, 14));
 		txtCuadroDato1.setText("0.0");
@@ -203,29 +183,31 @@ public class ConversorAlura extends JFrame implements ItemListener,ActionListene
 		txtCuadroDato1.setBackground(new Color(49, 176, 176));
 		txtCuadroDato1.setBounds(97, 263, 208, 19);
 		txtCuadroDato1.setColumns(10);
+		txtCuadroDato1.addKeyListener(new KeyAdapter() {/*hace q solo acepte numeros y un solo punto decimal
+			es lo mismo para txtCuadroDato2*/
+			@Override
+			public void keyTyped(KeyEvent e) {
+					char c= e.getKeyChar();
+					if((c<'0'||c>'9')&&(c != KeyEvent.VK_BACK_SPACE)&&(c!='.'||txtCuadroDato1.getText().contains("."))) e.consume();
+				}
+			});
+		txtCuadroDato1.addMouseListener(new MouseAdapter() {/* hace que siempre cuando selecciona otra casilla y
+			la casilla esta vacia quede en 0.0*/
+			@Override
+			public void mousePressed(MouseEvent e) {
+				 if(txtCuadroDato1.getText().equals("0.0")) {
+				 txtCuadroDato1.setText("");
+				 }
+				 if(txtCuadroDato2.getText().isEmpty()) {
+					 txtCuadroDato2.setText("0.0");	 
+				 }
+				}
+			});
 		contenidoPanel.add(txtCuadroDato1);
 		
 		
 		txtCuadroDato2 = new JTextField("0.0");
-		txtCuadroDato2.addKeyListener(new KeyAdapter() {
-			@Override
-			public void keyTyped(KeyEvent e) {
-				char c= e.getKeyChar();
-				if((c<'0'||c>'9')&&(c != KeyEvent.VK_BACK_SPACE)&&(c!='.'||txtCuadroDato2.getText().contains("."))) e.consume();
-			}
-		});
-		txtCuadroDato2.addMouseListener(new MouseAdapter() {
-			@Override
-			public void mousePressed(MouseEvent e) {
-				
-				if(txtCuadroDato2.getText().equals("0.0")) {
-					 txtCuadroDato2.setText("");
-					 }
-					 if(txtCuadroDato1.getText().isEmpty()) {
-						 txtCuadroDato1.setText("0.0");	 
-					 }
-			}
-		});
+		txtCuadroDato2.setEditable(false);
 		dato2=Double.parseDouble(txtCuadroDato2.getText());
 		txtCuadroDato2.setFont(new Font("Century Gothic", Font.BOLD, 14));
 		txtCuadroDato2.setForeground(new Color(0, 9, 36));
@@ -286,15 +268,13 @@ public class ConversorAlura extends JFrame implements ItemListener,ActionListene
 		mntmConversorAlura = new JMenuItem("Conversor");
 		mntmConversorAlura.setIcon(new ImageIcon(logo.getImage().getScaledInstance(20,20,Image.SCALE_SMOOTH)));
 		mntmConversorAlura.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent e) {
+			public void actionPerformed(ActionEvent e) {//Muestra el conversor principal desde el menu
 				contenidoPanel.setSize(626,511);
 				contenidoPanel.setLocation(0,0);
-				
 				contentConversor.removeAll();
 				contentConversor.add(contenidoPanel,BorderLayout.CENTER);
 				contentConversor.revalidate();
 				contentConversor.repaint();
-				
 			}
 		});
 		mnInicio.add(mntmConversorAlura);
@@ -312,7 +292,7 @@ public class ConversorAlura extends JFrame implements ItemListener,ActionListene
 		
 		logo= new ImageIcon(getClass().getResource("/imgs/oscuro.png"));
 		JRadioButtonMenuItem rdbtnmntmTemaOscuro = new JRadioButtonMenuItem("Oscuro");
-		rdbtnmntmTemaOscuro.addActionListener(new ActionListener() {
+		rdbtnmntmTemaOscuro.addActionListener(new ActionListener() {//Cambia el color del la interfaz a oscura
 			public void actionPerformed(ActionEvent e) {
 				lblFondo.setIcon(new ImageIcon(getClass().getResource("/imgs/interfazLong.png")));
 				textResultado.setBackground(new Color(171, 255, 209));
@@ -350,7 +330,7 @@ public class ConversorAlura extends JFrame implements ItemListener,ActionListene
 		
 		logo= new ImageIcon(getClass().getResource("/imgs/claro.png"));
 		JRadioButtonMenuItem rdbtnmntmTemaClaro = new JRadioButtonMenuItem("Claro");
-		rdbtnmntmTemaClaro.addActionListener(new ActionListener() {
+		rdbtnmntmTemaClaro.addActionListener(new ActionListener() {//Cambia el color del la interfaz a claro
 			public void actionPerformed(ActionEvent e) {
 				lblFondo.setIcon(new ImageIcon(getClass().getResource("/imgs/interfazClara.png")));
 				
@@ -397,7 +377,7 @@ public class ConversorAlura extends JFrame implements ItemListener,ActionListene
 		rdbtnmntmEspañol = new JRadioButtonMenuItem("Español");
 		rdbtnmntmEspañol.setFont(new Font("Century Gothic", Font.BOLD, 12));
 		rdbtnmntmEspañol.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent e) {
+			public void actionPerformed(ActionEvent e) {//Cambia el el idioma de la interfaz a español
 				cboSelectorConversor.setModel(new DefaultComboBoxModel(new String[] { "--","Moneda","Temperatura", "Velocidad", "Tiempo", "Longitud"}));
 				itemStateChanged(null);
 
@@ -427,7 +407,7 @@ public class ConversorAlura extends JFrame implements ItemListener,ActionListene
 		
 		rdbtnmntmIngles = new JRadioButtonMenuItem("Ingles");
 		rdbtnmntmIngles.setFont(new Font("Century Gothic", Font.BOLD, 12));
-		rdbtnmntmIngles.addActionListener(new ActionListener() {
+		rdbtnmntmIngles.addActionListener(new ActionListener() {//Cambia el el idioma de la interfaz a ingles
 			public void actionPerformed(ActionEvent e) {
 				
 				cboSelectorConversor.setModel(new DefaultComboBoxModel(new String[] {"--", "Currency","Temperature", "Velocity", "Time", "Length"}));
@@ -467,11 +447,13 @@ public class ConversorAlura extends JFrame implements ItemListener,ActionListene
 		
 		mntmAcercaDe = new JMenuItem("Acerca de");
 		mntmAcercaDe.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent e) {
+			public void actionPerformed(ActionEvent e) {/*Muestra el acerca de, habla un
+			 poco de la app y muestra redes sociales*/
 				Interfaz interfaz = new Interfaz();
 				interfaz.setSize(626,511);
 				interfaz.setLocation(0,0);
 				
+				//para eliminar y mostrar algo nuevo
 				contentConversor.removeAll();
 				contentConversor.add(interfaz,BorderLayout.CENTER);
 				contentConversor.revalidate();
@@ -489,13 +471,12 @@ public class ConversorAlura extends JFrame implements ItemListener,ActionListene
 		lblFondo.setBounds(0, 0, 626, 480);
 		contenidoPanel.add(lblFondo);
 		
-		
+		//indica en cual conversor inicia
         cboSelectorConversor.setSelectedIndex(0); 
         
         index = cboSelectorConversor.getSelectedIndex();
         datoBase = (String) cboListaConversor1.getSelectedItem();
         datoAConvertir = (String) cboListaConversor2.getSelectedItem();
-        
         
         
         txtCuadroDato1.addActionListener(this);
@@ -519,7 +500,8 @@ public class ConversorAlura extends JFrame implements ItemListener,ActionListene
         }
 
         @Override
-        public void focusLost(FocusEvent e) {
+        public void focusLost(FocusEvent e) {/*Hace q si pierde el foco y el cuadro texto esta vacio 
+        coloca  0.0 en el cuadro texto*/
             realizarOperacion();
             if(txtCuadroDato1.getText().isEmpty()) {
 				 txtCuadroDato1.setText("0.0");	 
@@ -527,7 +509,8 @@ public class ConversorAlura extends JFrame implements ItemListener,ActionListene
         }
     }
 
-   
+    
+    // Hace q al accionar una tecla se ejecute la operacion
     private class CustomKeyListener extends KeyAdapter {
         @Override
         public void keyReleased(KeyEvent e) {      
@@ -535,10 +518,9 @@ public class ConversorAlura extends JFrame implements ItemListener,ActionListene
         }
     }
 
+    //Este metodo hace q al sellecionar un tipo de metodo se ejecute la logica correspondiente 
     private void inicializarConversor() {
-    	
         conversorTipo = cboSelectorConversor.getSelectedIndex();
-        
         switch (conversorTipo) {
         	
             case 1:

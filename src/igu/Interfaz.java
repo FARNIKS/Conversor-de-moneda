@@ -17,14 +17,14 @@ import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JTextArea;
 import javax.swing.SwingConstants;
-
+// Es el panel de acerca de, donde da informacion del conversor y links directos a mis redes sociales.
 public class Interfaz extends JPanel {
 	private ImageIcon logo;
 	
     public Interfaz() {
     	setBackground(SystemColor.menu);
-    	logo= new ImageIcon(getClass().getResource("/imgs/LogoLinkedIn.png"));
     	
+    	logo= new ImageIcon(getClass().getResource("/imgs/LogoLinkedIn.png"));
     	setLayout(null);
     	JLabel lblLinkedIn = new JLabel();
     	lblLinkedIn.setBounds(310, 393, 50, 51);
@@ -33,6 +33,7 @@ public class Interfaz extends JPanel {
     	lblLinkedIn.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
     	lblLinkedIn.addMouseListener(new MouseAdapter() {
     	    @Override
+    	    // Metodo para q cuando de click redirija al usuario a mis redes sociales 
     	    public void mouseClicked(MouseEvent e) {
     	        abrirEnlace("https://www.linkedin.com/in/miguel-jimenez-b34899264/");
     	    }
@@ -51,11 +52,8 @@ public class Interfaz extends JPanel {
     	         abrirEnlace("https://github.com/FARNIKS");
     	     }
     	 });
+    	add(lblGitHub);
     	
-    	         add(lblGitHub);
-    	
-         
-         
          
          JLabel lblNewLabel = new JLabel("CONVERSOR");
          lblNewLabel.setHorizontalAlignment(SwingConstants.CENTER);

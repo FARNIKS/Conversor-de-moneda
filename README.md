@@ -1,4 +1,4 @@
-# CONVERSOR ALURA
+# CONVERSOR DE MONEDA
 <p align="left">
    <img src="https://img.shields.io/badge/VERSI%C3%93N-V2.1-rgb(15%2C128%2C193)">
    <img src="https://img.shields.io/badge/ESTADO-FINALIZADO-brightgreen">
